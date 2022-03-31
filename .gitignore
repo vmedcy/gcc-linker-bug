@@ -1,0 +1,6 @@
+obj
+out
+tmp*
+gcc*
+*.zip
+*.log
