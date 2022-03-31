@@ -1,0 +1,31 @@
+Convert string 'c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/;c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/' into prefixes, separator = ';'
+  - add prefix: c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/
+  - add prefix: c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/
+  - add prefix: c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+Convert string 'C:\cygwin64\bin' into prefixes, separator = ';'
+  - add prefix: C:\cygwin64\bin/
+Looking for 'real-ld'
+Looking for 'collect-ld'
+Looking for 'ld'
+Looking for 'gnm'
+Looking for 'arm-none-eabi-gnm'
+Looking for 'nm'
+Looking for 'gstrip'
+Looking for 'arm-none-eabi-gstrip'
+Looking for 'strip'
+Looking for 'C:\git\gcc-linker-bug\gcc\bin\arm-none-eabi-gcc.exe'
+  - found: absolute path
+collect2 version 10.3.1 20210621 (release)
+ld_file_name        = c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe
+c_file_name         = C:\git\gcc-linker-bug\gcc\bin\arm-none-eabi-gcc.exe
+nm_file_name        = c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/nm.exe
+strip_file_name     = c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/strip.exe
+c_file              = out/debug/cortex-m4/softfp/app.elf.cdtor.c
+o_file              = out/debug/cortex-m4/softfp/app.elf.cdtor.o
+COLLECT_GCC_OPTIONS = '-g' '-O0' '-mthumb' '-mcpu=cortex-m4' '-mfloat-abi=softfp' '-mfpu=fpv4-sp-d16' '-nostartfiles' '-v' '-save-temps' '-o' 'out/debug/cortex-m4/softfp/app.elf' '-mlibarch=armv7e-m+fp' '-march=armv7e-m+fp'
+COLLECT_GCC         = C:\git\gcc-linker-bug\gcc\bin\arm-none-eabi-gcc.exe
+COMPILER_PATH       = c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/;c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH        = c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/softfp/;c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/softfp/;c:/git/gcc-linker-bug/gcc/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/softfp/;c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/;c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/;c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/;c:/git/gcc-linker-bug/gcc/bin/../arm-none-eabi/lib/
+
+c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe @C:\git\gcc-linker-bug\tmp\ccSkdGy2
+c:/git/gcc-linker-bug/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00008000
