@@ -6,6 +6,9 @@ TMP_DIR := $(abspath tmp)
 # Use ./tmp for temporary files, instead of C:\cygwin64\tmp
 export TMP=$(TMP_DIR)
 
+# Cleanup PATH to avoid tool priority conflicts
+export PATH=/usr/bin
+
 GCC_DIR ?= gcc
 
 # Compiler/linker binary
