@@ -6,8 +6,10 @@ TMP_DIR := $(abspath tmp)
 # Use ./tmp for temporary files, instead of C:\cygwin64\tmp
 export TMP=$(TMP_DIR)
 
-# Cleanup PATH to avoid tool priority conflicts
+# Cleanup PATH to prevent discovery of host GCC in COMPILER_PATH
 export PATH=/usr/bin
+
+MKDIR   := /usr/bin/mkdir
 
 GCC_DIR ?= gcc
 
@@ -45,15 +47,15 @@ clean:
 
 # Create directory for object files
 $(OBJ_DIR):
-	mkdir -p $@
+	$(MKDIR) -p $@
 
 # Create directory for target application files
 $(OUT_DIR):
-	mkdir -p $@
+	$(MKDIR) -p $@
 
 # Create directory for intermediate files
 $(TMP_DIR):
-	mkdir -p $@
+	$(MKDIR) -p $@
 
 # Define recipe for compiler command
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c

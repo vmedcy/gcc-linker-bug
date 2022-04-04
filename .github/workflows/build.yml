@@ -1,0 +1,28 @@
+name: build
+
+on: push
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    defaults:
+      run:
+        shell: msys2 {0}
+
+    steps:
+    - uses: msys2/setup-msys2@v2
+      with:
+        install: >-
+          make
+          unzip
+
+    - uses: actions/checkout@v2
+
+    - name: fetch gcc
+      run: |
+        curl -f -L -s https://developer.arm.com/-/media/Files/downloads/gnu/11.2-2022.02/binrel/gcc-arm-11.2-2022.02-mingw-w64-i686-arm-none-eabi.zip -o gcc-arm-11.2-2022.02-mingw-w64-i686-arm-none-eabi.zip
+        unzip -qbo gcc-arm-11.2-2022.02-mingw-w64-i686-arm-none-eabi.zip
+        mv gcc-arm-11.2-2022.02-mingw-w64-i686-arm-none-eabi gcc
+        
+    - run: make build
